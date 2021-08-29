@@ -1,0 +1,44 @@
+div.toggle-btns {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+  div.toggle-btn {
+    margin:10px;
+  }
+  .toggle-btn label {
+    positon:relative;
+    display:block;
+    width:50px;
+    height:25px;
+    background:#aaa;
+    border-radius:15px;
+    transition:all 150ms linear;
+  }
+   
+  .toggle-btn label:before {
+    position:relative;
+    content:"";
+    width:20px;
+    height:20px;
+    background:#ddd;
+    display:block;
+    border-radius:50%;
+    top:2.5px;
+    left:5px;
+    transition:all 150ms linear;
+  }
+  .toggle-btn.red input:checked + label {
+    background:orangered;
+  }
+  .toggle-btn input:checked + label {
+    background:#00acee;
+  }
+  .toggle-btn input:checked + label:before {
+    left:25px;
+  }
+   
+  .toggle-btn input {
+    display:none;
+  }

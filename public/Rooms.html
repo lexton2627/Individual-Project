@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="A web page about IoT Applications" />
+    <meta name="author" content="ENTER YOUR NAME HERE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .footer {
+         position: fixed;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         background-color: grey;
+         color: white;
+         text-align: center;
+      }
+      </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Rooms</title>
+  </head>
+  <div class="container">
+    <div id="navbar"></div>
+    <body>
+      <h1>Register A new Room</h1> 
+      <div>
+          <div class="form-group">
+              <label for="roomnumber">Room number</label>
+              <input type="text" class="form-control" id="roomnumber" />
+            </div>
+            
+            <div class="form-group">
+              <label for="occupant">Occupant</label>
+              <input type="text" class="form-control" id="occupant" />
+            </div>
+            
+            <button class="btn btn-success" id="add-room">Save</button>
+      </div>
+        <h1>Room List</h1> 
+        <div>
+        <table id="rooms" class="table">
+            <thead>
+              <tr>
+                <th>Room number</th>
+                <th>Occupant</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          </div>
+          <div class="footer">
+            <p>Created by: Lachlan Exton</p>
+          </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+  Copyright Lachlan Exton 2021
+
+</html>
